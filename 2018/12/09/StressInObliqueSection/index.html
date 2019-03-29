@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>材料力学中单轴拉压斜截面上的应力 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="实验室的师弟问了一个材料力学在单轴拉压的状态下在垂直于轴线的截面上和在斜截面上同一点的沿水平方向上的应力为什么不同的问题，自己以前学习的时候好像也遇到过这种问题，就想把这个问题说清楚。**谈应力不能离开截面**">
+<meta name="keywords" content="mechanics">
+<meta property="og:type" content="article">
+<meta property="og:title" content="材料力学中单轴拉压斜截面上的应力">
+<meta property="og:url" content="http://yoursite.com/2018/12/09/StressInObliqueSection/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="实验室的师弟问了一个材料力学在单轴拉压的状态下在垂直于轴线的截面上和在斜截面上同一点的沿水平方向上的应力为什么不同的问题，自己以前学习的时候好像也遇到过这种问题，就想把这个问题说清楚。**谈应力不能离开截面**">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-09T08:27:49.216Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="材料力学中单轴拉压斜截面上的应力">
+<meta name="twitter:description" content="实验室的师弟问了一个材料力学在单轴拉压的状态下在垂直于轴线的截面上和在斜截面上同一点的沿水平方向上的应力为什么不同的问题，自己以前学习的时候好像也遇到过这种问题，就想把这个问题说清楚。**谈应力不能离开截面**">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-StressInObliqueSection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/09/StressInObliqueSection/" class="article-date">
+  <time datetime="2018-12-09T07:19:41.000Z" itemprop="datePublished">2018-12-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      材料力学中单轴拉压斜截面上的应力
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="正截面"><a href="#正截面" class="headerlink" title="正截面"></a>正截面</h3>
+<p>取截面轴向上一点，$\sigma=\frac{F}{A}$</p>
+<h3 id="斜截面"><a href="#斜截面" class="headerlink" title="斜截面"></a>斜截面</h3>
+<p>取截面轴向上同一点，$\sigma_\alpha=\frac{F}{A}\cos^2\alpha,\tau_{\alpha}=\frac{F}{A}\sin\alpha\cos\alpha$,合成水平向右的应力$\sigma=\frac{F}{A}\cos\alpha$<br>这个时候就提出了问题，同一点的同一方向应力为什么会由于人为假定取的截面的方向的不同而不同呢，似乎违反了“直觉”。</p>
+<h2 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h2><p>这个时候就要从应力的定义出发</p>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote>
+<p>一个在外界因素(例如外力、温度变化等)作用下的物体其内各部分之间要产生相互的作用。这种物理内的一部分与相邻的另一部分之间相互作用的力，称为<strong>内力</strong>。<br>为了暴露内力，假想通过物体内任意一点$M$作法线方向为$\nu$的微小面$\Delta S$，在微小面上会有相应的内力$\Delta P$，由物体连续性的假设，可以认为作用在微小面$\Delta S$上的力是连续分布的，内力$\Delta P$则是这个分布力的合力。令$\Delta S\to 0$，则极限$F_\nu=\lim_{\Delta S\to 0}\frac{\Delta P}{\Delta S}$就称为应力，$F$右下角的$\nu$表示微分面的法线方向，用以表示应力作用面的方位。…必须指出，凡提到应力，应同时指明它是对物体内哪一点并过该点的哪个微分面来说的。因为通过物体内同一点可以作无数个方位不同的微分面。<strong>显然，各个微分面上的应力一般说是不同的。</strong></p>
+</blockquote>
+
+<h3 id="判断这个两种截面上同一点的应力状态是同一个应力状态"><a href="#判断这个两种截面上同一点的应力状态是同一个应力状态" class="headerlink" title="判断这个两种截面上同一点的应力状态是同一个应力状态"></a>判断这个两种截面上同一点的应力状态是同一个应力状态</h3><ul>
+<li>正截面<br>应力张量$\sigma$：</li>
+</ul>
+<p>$$<br>    \begin{bmatrix}<br>        \frac{F}{A} &amp; 0 \\<br>        0           &amp; 0<br>    \end{bmatrix}<br>$$</p>
+<ul>
+<li>斜截面<br>应力张量$\sigma^*$:</li>
+</ul>
+<p>$$<br>    \begin{bmatrix}<br>        \frac{F}{A}\cos^2\alpha &amp; \frac{F}{A}\sin\alpha\cos\alpha \\<br>        \frac{F}{A}\sin\alpha\cos\alpha           &amp; \frac{F}{A}\sin^2\alpha<br>    \end{bmatrix}<br>$$ </p>
+<ul>
+<li>由正截面到斜截面的坐标转换$Q$</li>
+</ul>
+<p>$$<br>    \begin{bmatrix}<br>        \cos\alpha   &amp; -\sin\alpha \\<br>        \sin\alpha  &amp; \cos\alpha<br>    \end{bmatrix}<br>$$  </p>
+<p>由正截面转换到斜截面$Q\sigma Q^T$:</p>
+<p>$$<br>    \begin{bmatrix}<br>        \cos\alpha   &amp; -\sin\alpha \\<br>        \sin\alpha  &amp; \cos\alpha<br>    \end{bmatrix}<br>    \begin{bmatrix}<br>        \frac{F}{A} &amp; 0 \\<br>        0           &amp; 0<br>    \end{bmatrix}<br>    \begin{bmatrix}<br>        \cos\alpha   &amp; \sin\alpha \\<br>        -\sin\alpha  &amp; \cos\alpha<br>    \end{bmatrix}<br>    =<br>    \begin{bmatrix}<br>        \frac{F}{A}\cos^2\alpha &amp; \frac{F}{A}\sin\alpha\cos\alpha \\<br>        \frac{F}{A}\sin\alpha\cos\alpha           &amp; \frac{F}{A}\sin^2\alpha<br>    \end{bmatrix}<br>$$ </p>
+<p>即</p>
+<p>$$\sigma^*=Q\sigma Q^T$$ </p>
+<p>张量表示</p>
+<p>$$\sigma=\sigma_{ij}\vec{e_i}\otimes\vec{e_j}=\sigma^*_{ij}\vec{e^*_i}\otimes\vec{e^*_j}$$</p>
+<p>是同一个应力状态。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/09/StressInObliqueSection/" data-id="cjtttgek90005f8v14y1oekbn" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mechanics/">mechanics</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/09/DrawDealiiStreamFigure/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          DrawDealiiStreamFigure
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dealii/">dealii</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanics/">mechanics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tikz/">tikz</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/dealii/" style="font-size: 10px;">dealii</a> <a href="/tags/mechanics/" style="font-size: 20px;">mechanics</a> <a href="/tags/tikz/" style="font-size: 10px;">tikz</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/29/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/programmingPFmodeling14/">Programming Phase Field modeling case14 代码勘误</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/09/DrawDealiiStreamFigure/">DrawDealiiStreamFigure</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/09/StressInObliqueSection/">材料力学中单轴拉压斜截面上的应力</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
