@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/02/20/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p>$$<br>a \to b<br>$$</p>
-]]></content>
-  </entry>
-  <entry>
     <title>UTF-8编码的解析</title>
     <url>/2023/02/27/UTF-8%E7%BC%96%E7%A0%81%E7%9A%84%E8%A7%A3%E6%9E%90/</url>
     <content><![CDATA[<p>使用C语言处理<code>UTF-8</code>编码文本时，单纯用<code>getc</code>和<code>putc</code>函数处理单字符已经无法满足需求，<br>所以需要了解怎么处理<code>UTF-8</code>编码的文本。</p>
@@ -44,5 +24,40 @@
         <tag>C</tag>
         <tag>编程</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>毛笔笔画粗细变化</title>
+    <url>/2023/02/27/%E6%AF%9B%E7%AC%94%E7%AC%94%E7%94%BB%E7%B2%97%E7%BB%86%E5%8F%98%E5%8C%96/</url>
+    <content><![CDATA[<p>笔画粗细变化有两种方式:</p>
+<ol>
+<li>按开</li>
+<li>解开（侧锋入笔）<span id="more"></span></li>
+</ol>
+<p>按开就是提按不同导致笔画粗细不同，按的力气大些笔画就粗些。</p>
+<p>而解开就是先轻轻下笔，下笔方向与笔画方向成90°左右（随意，看实际情况），然后稍稍放轻力气，让笔和纸保持接触同时笔尖又没有压力。接着向笔画的方向行笔，感受笔毫在这个方向变化过程中的弹力即可。这个解开的过程就可以从侧边入手随意调整笔画粗细，还保留一种弹力的味道。<br>来源于B站视频：<a href="https://www.bilibili.com/video/BV1wd4y1J7d4/?share_source=copy_web&vd_source=f42c80b48d6f78c5608245eba6dfb797">【书法研究】自学书法最大的笔法误区</a></p>
+]]></content>
+      <tags>
+        <tag>书法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/02/20/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>$$<br>a \to b<br>$$</p>
+]]></content>
   </entry>
 </search>
