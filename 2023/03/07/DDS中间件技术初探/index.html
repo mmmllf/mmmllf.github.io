@@ -19,25 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.14.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":"enable","style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="一些随便说说的话">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mmm的blog">
-<meta property="og:url" content="http://example.com/tags/%E7%BC%96%E7%A8%8B/index.html">
+    <meta name="description" content="DDS中间件处于操作系统之上，应用软件之下，是在分布式系统上具有高可用和高实时的中间件技术。在分布式系统和异构的系统（芯片CPU、GPU、MCU、FPGA等）中使用，提高应用层开发效率，提供分系统的重构、容错、任务调度的功能。DDS中间件的所有功能都基于“采集”和“调度”的能力和机制。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DDS中间件技术初探">
+<meta property="og:url" content="http://example.com/2023/03/07/DDS%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%88%9D%E6%8E%A2/index.html">
 <meta property="og:site_name" content="mmm的blog">
-<meta property="og:description" content="一些随便说说的话">
+<meta property="og:description" content="DDS中间件处于操作系统之上，应用软件之下，是在分布式系统上具有高可用和高实时的中间件技术。在分布式系统和异构的系统（芯片CPU、GPU、MCU、FPGA等）中使用，提高应用层开发效率，提供分系统的重构、容错、任务调度的功能。DDS中间件的所有功能都基于“采集”和“调度”的能力和机制。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-07T14:10:48.000Z">
+<meta property="article:modified_time" content="2023-03-07T14:37:33.629Z">
 <meta property="article:author" content="mmm">
+<meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/tags/%E7%BC%96%E7%A8%8B/">
+<link rel="canonical" href="http://example.com/2023/03/07/DDS%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%88%9D%E6%8E%A2/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/编程/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/03/07/DDS%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%88%9D%E6%8E%A2/","path":"2023/03/07/DDS中间件技术初探/","title":"DDS中间件技术初探"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: 编程 | mmm的blog</title>
+<title>DDS中间件技术初探 | mmm的blog</title>
   
 
 
@@ -167,70 +170,127 @@
 
     </div>
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">编程
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/07/DDS%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%88%9D%E6%8E%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mmm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mmm的blog">
+      <meta itemprop="description" content="一些随便说说的话">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="DDS中间件技术初探 | mmm的blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          DDS中间件技术初探
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
+
+      <time title="创建时间：2023-03-07 22:10:48 / 修改时间：22:37:33" itemprop="dateCreated datePublished" datetime="2023-03-07T22:10:48+08:00">2023-03-07</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>694</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>DDS中间件处于操作系统之上，应用软件之下，是在分布式系统上具有高可用和高实时的中间件技术。在分布式系统和异构的系统（芯片CPU、GPU、MCU、FPGA等）中使用，提高应用层开发效率，提供分系统的重构、容错、任务调度的功能。DDS中间件的所有功能都基于“<strong>采集</strong>”和“<strong>调度</strong>”的能力和机制。</p>
+<span id="more"></span>
+<ul>
+<li><p>高可用和高实时<br>高可用指资源是统一访问的、与地址无关的。高实时指无中心的、自发现的、点对点的调度过程。为了高实时采用的网络通讯协议可以是UDP+可靠性措施（TCP太慢）。</p>
+</li>
+<li><p>采集和调度<br>采集是采集各个系统的负载信息、错误信息，根据采集到的信息进行调度（包括重构、容错、迁移、热备、冷备等）。调度还可以分任务框架上的调度和算法层面上的调度。</p>
+</li>
+</ul>
+<p>DDS中间件技术的特点是以数据为中心，共享全局数据空间、单点集成、灵活可扩展。</p>
+<p>目前DDS中间件的数据资源调用方式有：</p>
+<ol>
+<li>发布&#x2F;订阅</li>
+<li>请求&#x2F;响应</li>
+<li>消息队列</li>
+</ol>
+<ul>
+<li>DDS有国际通用的一套标准<br>也可以有自己的一套编码规则（高兼容）和协议规范，这样就拥有了支持分系统插入和各个子系统迭代演化的能力。协议规范根据应用的不同可能还需要用户参与定制。</li>
+</ul>
+<p>目前分布式系统中的DDS调用主要还是通过以太网，用户使用DDS中间件的时候可以和DDS中间件在整个开发周期中都进行适配配套，提高开发效率。DDS服务的提供商还会提供完整的一套工具集，包括设计开发环境、日志记录和监控。</p>
+<p>目前使用DDS中间件技术的环境基本都有系统间通信、将不同的系统看作统一的资源和调度的需求。在分布式系统的任务调度中还需要考虑是独立的任务还是具有相关性的任务、带数据（环境）的任务迁移还是不带数据的任务迁移，此外如果是分布式计算任务还需要考虑统筹的算法或软件。使用DDS中间件还有一个前提是任务和资源需要做到位置无关（一种抽象），如果做不到就需要额外考虑调度的机制。</p>
+<p>目前DDS中间件的技术可以做到时钟在微秒级的同步，这也受网络通信性能的影响。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-03-07T22:10:48+08:00"
-              content="2023-03-07">
-          03-07
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/03/07/DDS%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%88%9D%E6%8E%A2/" itemprop="url">
-            <span itemprop="name">DDS中间件技术初探</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag"># 编程</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/02/27/%E6%AF%9B%E7%AC%94%E7%AC%94%E7%94%BB%E7%B2%97%E7%BB%86%E5%8F%98%E5%8C%96/" rel="prev" title="毛笔笔画粗细变化">
+                  <i class="fa fa-chevron-left"></i> 毛笔笔画粗细变化
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-02-27T19:05:50+08:00"
-              content="2023-02-27">
-          02-27
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/02/27/UTF-8%E7%BC%96%E7%A0%81%E7%9A%84%E8%A7%A3%E6%9E%90/" itemprop="url">
-            <span itemprop="name">UTF-8编码的解析</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-    </div>
-  </div>
-  
-  
-  
+
 
 </div>
   </main>
